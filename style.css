@@ -1,0 +1,65 @@
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    color: rgb(32, 40, 91);
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+footer > h3 {
+    margin: 0;
+    padding: 1em;
+}
+
+footer > a {
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+nav {
+    background-color: rgb(0, 128, 129);
+    margin: 0;
+    color: rgb(32, 40, 91);
+    padding: 1em;
+}
+
+footer {
+    background-color: rgb(0, 128, 129);
+    margin: 0;
+    color: rgb(32, 40, 91);
+    padding: 1em;
+}
+
+hr {
+    border: 1px solid rgb(32, 40, 91);
+}
+
+main {
+    background-color: rgb(252, 209, 42);
+    padding: 2em;
+}
+
+article > hgroup {
+    background-color: rgb(204, 119, 34);
+    padding: 1em;
+}
+
+.skills {
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+.aboutMe {
+    background-color: rgb(114, 133, 165);
+    padding: 1em;
+
+}
+
+.stayConnected {
+    background-color: rgb(204, 119, 34);
+    padding: 1em;
+}
