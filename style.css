@@ -5,6 +5,55 @@ body {
     margin: 0;
 }
 
+article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:    "hg hg hg hg"
+                            "s am am am "
+                            "sc sc sc sc";
+}
+
+.skills {
+    background-color: antiquewhite;
+    padding: 1em;
+    flex: 1;
+    grid-area: s;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(114, 133, 165);
+    padding: 1em;
+    flex: 2;
+    grid-area: am;
+}
+
+.stayConnected {
+    /* background-color: rgb(204, 119, 34);
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: sc; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: cf;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    grid-area: c;
+}
+
 ul {
     margin: 0;
 }
@@ -37,7 +86,7 @@ nav {
 .nav-list a {
     display: block;
     padding: 0.5em;
-  }
+}
 
 footer {
     display: flex;
@@ -75,42 +124,33 @@ main {
 article > hgroup {
     background-color: rgb(204, 119, 34);
     padding: 1em;
+    grid-area: hg;
 }
 
-.skills {
-    background-color: antiquewhite;
-    padding: 1em;
-    flex: 1;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    article {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:    "hg hg hg hg"
+                                "s s s s "
+                                "am am am am"
+                                "sc sc sc sc";
+    }
 }
 
-.aboutMe {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(114, 133, 165);
-    padding: 1em;
-    flex: 2;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
 }
 
-.stayConnected {
-    background-color: rgb(204, 119, 34);
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
 
-.content {
-    display: flex;
-    flex-direction: row;
-}
-/* .contact-radio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
