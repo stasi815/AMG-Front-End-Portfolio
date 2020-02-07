@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica;
     font-size: 16px;
-    color: rgb(32, 40, 91);
+    color: rgb(28, 33, 65);
     margin: 0;
 }
 
@@ -23,10 +23,15 @@ article {
 .aboutMe {
     display: flex;
     flex-direction: row;
-    background-color: rgb(114, 133, 165);
+    background-color: rgb(190, 203, 225);
     padding: 1em;
     flex: 2;
     grid-area: am;
+}
+
+.aboutMeContent {
+    display: flex;
+    flex-direction: column;
 }
 
 .stayConnected {
@@ -70,9 +75,9 @@ footer > a {
 }
 
 nav {
-    background-color: rgb(0, 128, 129);
+    background-color: rgb(28, 33, 65);
     margin: 0;
-    color: rgb(32, 40, 91);
+    color: rgb(28, 33, 65);
     padding: 1em;
     justify-content: flex-end;
 }
@@ -92,9 +97,9 @@ footer {
     display: flex;
     flex-direction: row;
     list-style: none;
-    background-color: rgb(0, 128, 129);
+    background-color: rgb(28, 33, 65);
     margin: 0;
-    color: rgb(32, 40, 91);
+    color: rgb(28, 33, 65);
     padding: 1em;
     align-items: baseline;
     justify-content: center;
@@ -117,12 +122,12 @@ hr {
 }
 
 main {
-    background-color: rgb(252, 209, 42);
+    background-color: rgb(255, 255, 255);
     padding: 2em;
 }
 
 article > hgroup {
-    background-color: rgb(204, 119, 34);
+    background-color: rgb(252, 246, 172);
     padding: 1em;
     grid-area: hg;
 }
@@ -131,12 +136,26 @@ article > hgroup {
 @media only screen and (max-width: 600px) {
     article {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:    "hg hg hg hg"
-                                "s s s s "
-                                "am am am am"
-                                "sc sc sc sc";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:    "hg hg"
+                                "s s "
+                                "am am"
+                                "sc sc";
     }
+    footer {
+        width: 100%;
+    }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
+    figure {
+        overflow: hidden;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
